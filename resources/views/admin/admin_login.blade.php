@@ -49,6 +49,10 @@
                 </div>
 
                 @endif
+                
+                @if(Route::has('admin.login'))
+                <h3 style="color: white; text-align:center">Admin Login</h3>
+                @endif
 
 
                 <form action="{{route('admin.login')}}" class="d-block" method="post">
